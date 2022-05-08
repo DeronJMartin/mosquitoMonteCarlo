@@ -40,7 +40,6 @@ for i in range(sims):
         if (current_depth == d):
             if (eucl(mos, current_mos) > outside):
                 outside_states += 1
-            fail_states += 1
             break
         
         # Increase depth
@@ -53,5 +52,5 @@ for i in range(sims):
         current_mos = (round(current_mos[0] + 250*cos(theta), 2), round(current_mos[1] + 250*sin(theta), 2))
 
 # Print results
-print("Probability of mosqutio finding the human: %f", success_states/sims)
-print("Probability of mosqutio dying further than 1000m: %f", outside_states/sims)
+print("Probability of mosqutio finding the human: %f", round(success_states/sims), 2)
+print("Probability of mosqutio dying further than 1000m: %f", round(outside_states/sims), 2)
