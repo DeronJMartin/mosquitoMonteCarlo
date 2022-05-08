@@ -19,14 +19,9 @@ b = 72
 sims = 10000
 
 # Initialize probability variables
-# total_states = 0
 success_states = 0
 fail_states = 0
 outside_states = 0
-
-# Initialize stack with mosquito position
-# stack = []
-# stack.append(mos)
 
 # Initialize depth which we know is 10
 d = 10
