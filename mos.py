@@ -20,7 +20,6 @@ sims = 10000
 
 # Initialize probability variables
 success_states = 0
-fail_states = 0
 outside_states = 0
 
 # Initialize depth which we know is 10
@@ -54,10 +53,5 @@ for i in range(sims):
         current_mos = (round(current_mos[0] + 250*cos(theta), 2), round(current_mos[1] + 250*sin(theta), 2))
 
 # Print results
-print("No. of success states: %d", success_states)
-print("No. of fail states: %d", fail_states)
-print("No. of outside death states: %d", outside_states)
-print("\n")
 print("Probability of mosqutio finding the human: %f", success_states/sims)
-print("Probability of mosqutio dying without finding the human: %f", fail_states/sims)
 print("Probability of mosqutio dying further than 1000m: %f", outside_states/sims)
