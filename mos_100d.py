@@ -42,7 +42,7 @@ for j in range(1,d+1):
                 break
             
             # End condition
-            if (current_depth == d):
+            if (current_depth == j):
                 break
             
             # Increase depth
